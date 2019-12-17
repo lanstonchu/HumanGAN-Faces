@@ -1,0 +1,110 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3682,        102]
+NotebookOptionsPosition[      2838,         83]
+NotebookOutlinePosition[      3181,         98]
+CellTagsIndexPosition[      3138,         95]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellLabel->"In[14]:=",ExpressionUUID->"0dd10804-f069-4f08-bde2-6c2f5310e292"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sigma", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\<C:\\Users\\Lanston\\Desktop\\vs\\Sigma_Matrix_theta.csv\>\"", 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.784430461571745*^9, 3.7844305186073017`*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->"In[4]:=",ExpressionUUID->"55d530e9-607b-41c0-a8d2-c8c5e8df3571"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"invSigma", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\<C:\\Users\\Lanston\\Desktop\\vs\\inv_Sigma_Matrix_theta.csv\>\"", 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.784430571088277*^9, 3.7844305848252993`*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->"In[7]:=",ExpressionUUID->"fd088976-39ba-4d81-b32a-0a3997bb2344"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"invSigmaWolfram", "=", 
+   RowBox[{"Inverse", "[", "sigma", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.784430616735861*^9, 3.7844306390236263`*^9}, {
+  3.784430670211701*^9, 3.784430670354228*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"c1766156-303c-4503-a6e7-f6be4d07a6e7"],
+
+Cell[BoxData[
+ RowBox[{"invSigmaWolfram", "[", 
+  RowBox[{"[", 
+   RowBox[{
+    RowBox[{"100", ";;", "105"}], ",", 
+    RowBox[{"100", ";;", "105"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.784430678353342*^9, 3.7844306848196125`*^9}, {
+  3.7844307369119873`*^9, 3.7844307421412563`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"44e73403-ed5c-468c-a45e-4fcd4bff0fea"],
+
+Cell[BoxData[
+ RowBox[{"invSigma", "[", 
+  RowBox[{"[", 
+   RowBox[{
+    RowBox[{"100", ";;", "105"}], ",", 
+    RowBox[{"100", ";;", "105"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.7844306989335346`*^9, {3.7844307485303755`*^9, 3.7844307535887694`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"23ef9e4e-ba17-482f-8cdb-dd613bd5d764"],
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\<C:\\Users\\Lanston\\Desktop\\vs\\inv_Sigma_from_Mathematica.csv\>\"", 
+   ",", "invSigmaWolfram"}], "]"}]], "Input",
+ CellChangeTimes->{{3.784431996772546*^9, 3.784432031031175*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->"In[13]:=",ExpressionUUID->"820b1667-4a31-4d28-8c47-6648732551b0"]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 572}, {64, Automatic}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 155, 2, 61, "Input",ExpressionUUID->"0dd10804-f069-4f08-bde2-6c2f5310e292"],
+Cell[716, 24, 357, 9, 28, "Input",ExpressionUUID->"55d530e9-607b-41c0-a8d2-c8c5e8df3571"],
+Cell[1076, 35, 364, 9, 28, "Input",ExpressionUUID->"fd088976-39ba-4d81-b32a-0a3997bb2344"],
+Cell[1443, 46, 315, 6, 28, "Input",ExpressionUUID->"c1766156-303c-4503-a6e7-f6be4d07a6e7"],
+Cell[1761, 54, 375, 8, 28, "Input",ExpressionUUID->"44e73403-ed5c-468c-a45e-4fcd4bff0fea"],
+Cell[2139, 64, 344, 8, 28, "Input",ExpressionUUID->"23ef9e4e-ba17-482f-8cdb-dd613bd5d764"],
+Cell[2486, 74, 348, 7, 28, "Input",ExpressionUUID->"820b1667-4a31-4d28-8c47-6648732551b0"]
+}
+]
+*)
+
