@@ -43,3 +43,4 @@ To run the codes:
 Notes:
 
 1. inv_Sigma_theta.mat is for comparison purpose only, which won't be used in the code. Instead, inv_Sigma_from_Numpy.csv would be imported by the Matlab code.
+2. To enhance efficiency, during testing some iterations can be removed from model_weights.mat to shorten the model weight loading time.
