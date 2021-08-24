@@ -9,5 +9,5 @@ HumanGAN for Human Faces
 <img src="./Flowchart_HumanGAN_on_Faces.png" width="700px"/>
 <img src="./two_faces.png" width="700px"/>
 
-  [1]: https://github.com/lanstonchu/HumanGAN-Faces/blob/master/0%20-%20HumanGAN%20for%20Human%20Faces%20-%20Lanston%20Hau%20Man%20Chu.pdf
-  [2]: https://github.com/lanstonchu/HumanGAN-Faces/blob/master/README%20-%20code.txt
+[1]: https://github.com/lanstonchu/HumanGAN-Faces/blob/master/0%20-%20HumanGAN%20for%20Human%20Faces%20-%20Lanston%20Hau%20Man%20Chu.pdf
+[2]: https://github.com/lanstonchu/HumanGAN-Faces/blob/master/README%20-%20code.txt
